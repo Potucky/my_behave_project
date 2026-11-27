@@ -1,0 +1,2 @@
+payment_id,order_id,amount,method,paid_at,status
+PAY-000001,ORD-000001,139.49,card,2024-01-28T17:27:02Z,captured

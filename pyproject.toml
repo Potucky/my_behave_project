@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qa-data-factory"
+version = "0.1.0"
+description = "Constrained, referentially consistent fictional test data for QA automation."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "faker==40.63.0",
+    "PyYAML==6.0.4",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest==9.2.0",
+    "pytest-html==4.2.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+qa_data_factory = ["py.typed"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-ra --strict-markers"
