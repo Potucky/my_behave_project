@@ -1,0 +1,8 @@
+# Local factory settings. QADF_* environment variables override these keys.
+# There are no secrets in this file. Generated people and payments are fictional.
+seed: 42
+customers: 5
+orders_per_customer: 2
+lines_per_order: 2
+tax_rate: "0.08"
+currency: USD

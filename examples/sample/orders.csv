@@ -1,0 +1,2 @@
+order_id,customer_id,order_date,status,currency,subtotal,tax,total
+ORD-000001,CUS-000002,2024-01-28,paid,USD,129.16,10.33,139.49

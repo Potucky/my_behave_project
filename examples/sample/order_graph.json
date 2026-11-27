@@ -1,0 +1,82 @@
+{
+  "seed": 42,
+  "tax_rate": "0.08",
+  "currency": "USD",
+  "customers": [
+    {
+      "customer_id": "CUS-000001",
+      "first_name": "Danielle",
+      "last_name": "Johnson",
+      "email": "danielle.johnson.1@example.com",
+      "phone": "+12025550100",
+      "created_at": "2024-11-23",
+      "city": "Johnberg",
+      "country": "United States",
+      "status": "inactive"
+    },
+    {
+      "customer_id": "CUS-000002",
+      "first_name": "Jill",
+      "last_name": "Rhodes",
+      "email": "jill.rhodes.2@example.com",
+      "phone": "+12025550101",
+      "created_at": "2024-01-13",
+      "city": "New Roberttown",
+      "country": "United States",
+      "status": "active"
+    }
+  ],
+  "orders": [
+    {
+      "order_id": "ORD-000001",
+      "customer_id": "CUS-000002",
+      "order_date": "2024-01-28",
+      "status": "paid",
+      "currency": "USD",
+      "subtotal": "129.16",
+      "tax": "10.33",
+      "total": "139.49"
+    }
+  ],
+  "order_lines": [
+    {
+      "line_id": "LIN-000001",
+      "order_id": "ORD-000001",
+      "sku": "SKU-TEE-001",
+      "product_name": "Cotton Tee",
+      "quantity": 4,
+      "unit_price": "19.99",
+      "line_total": "79.96"
+    },
+    {
+      "line_id": "LIN-000002",
+      "order_id": "ORD-000001",
+      "sku": "SKU-BTL-001",
+      "product_name": "Water Bottle",
+      "quantity": 3,
+      "unit_price": "16.40",
+      "line_total": "49.20"
+    }
+  ],
+  "payments": [
+    {
+      "payment_id": "PAY-000001",
+      "order_id": "ORD-000001",
+      "amount": "139.49",
+      "method": "card",
+      "paid_at": "2024-01-28T17:27:02Z",
+      "status": "captured"
+    }
+  ],
+  "invoices": [
+    {
+      "invoice_id": "INV-000001",
+      "order_id": "ORD-000001",
+      "invoice_number": "INV-20240128-000001",
+      "issued_at": "2024-01-28",
+      "due_at": "2024-02-27",
+      "amount": "139.49",
+      "status": "paid"
+    }
+  ]
+}

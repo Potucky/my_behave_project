@@ -1,0 +1,2 @@
+invoice_id,order_id,invoice_number,issued_at,due_at,amount,status
+INV-000001,ORD-000001,INV-20240128-000001,2024-01-28,2024-02-27,139.49,paid
